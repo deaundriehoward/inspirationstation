@@ -1,0 +1,205 @@
+/* CSS RESET AND STUFF */
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+    background: #000;
+}
+
+/* Navigation Section */
+.top-nav {
+	background-color: #fff;
+	opacity: 0.4;
+	color: #000;
+}
+.nav-wrapper {
+	width: 100%;
+	margin: 0 auto;
+	text-align: right;
+}
+.top-nav ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	position: relative;
+	min-width: 200px;
+}
+.top-nav ul li {
+	display: inline-block;
+}
+.top-nav ul li:hover {
+	background-color: #333;
+}
+.top-nav ul li a, li:visited {
+	color: #aaa;
+	display: block;
+	text-decoration: none;
+	padding: 15px;
+}
+.top-nav ul li a:hover {
+	color: #ccc;
+	text-decoration: none;	
+}
+.top-nav ul li:hover ul {
+	visibility: visible;
+}
+.top-nav ul ul {
+	visibility: hidden;
+	position: absolute;
+	background-color: #333;
+	border-top: 0;
+
+}
+.top-nav ul ul li{
+	display: block;
+	background-color: #333;
+	text-align: left;
+}
+.top-nav ul ul li a:hover {
+	color: #669;
+}
+
+/* Introduction Section */
+.intro {
+	text-align: center;
+	background-image: url('img/rock-person.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: cover;	
+	background-size: 100%;
+	height: 50rem;
+	padding: 0 auto;
+	margin: -6.5rem auto;
+	color: #fff;
+}
+.intro h2 {
+	padding-top: 5rem;
+	font-family: 'Josefin Slab', serif;
+	text-transform: uppercase;
+	font-size: 4rem;
+	margin-right: 15rem;
+}
+
+.intro h1 {
+	padding-top: -1rem;
+	font-family: 'Josefin Slab', serif;
+	font-weight: 700;
+	font-size: 7rem;
+}
+.intro .inspire {
+	border: 3px solid white;
+	border-radius: 25px;
+	box-shadow: transparent white;
+	height: 5rem;
+	width: 15rem;
+	font-size: 1rem;
+background: transparent;
+color: white;
+}
+
+/* Inpsiration Updates */
+.tabs {
+	text-align: center;
+	padding: 0;
+	color: white;
+	font-family: "josefin Slab", serif;
+	font-weight: 100 thin;
+	font-size: 17px;
+	margin: 15rem auto;
+}
+.tabs .content h1, h2, p {
+	max-width: 37.5rem;
+	margin-left: 25rem;
+}
+.tabs .road {
+	background-image: url("img/sunrise-road.jpg");
+	background-position: 100%;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	margin-top: 15rem;
+	height: 40rem;
+}
+
+.tabs .edge {
+	background-image: url("img/person-ledge.jpg");
+	background-position: 100%;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	margin-top: 15rem;
+	height: 40rem;
+}
+.tabs .madders {
+	background-image: url("img/m&m.jpg");
+	background-position: 100%;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	margin-top: 15rem;
+	height: 40rem;
+}
+img {
+	margin-top: -5rem;
+	border-radius: 20px;
+}
+.tabs a {
+	color: #eee;
+}
+br {
+	color: white;
+}
+
+/* Contact and Review */
+
+.contact .content {
+	color: #fff;
+	max-width: 37.5rem;
+	text-align: center;
+	margin-left: 30rem;
+}
+
+.contact input {
+		margin: .5rem 0;
+}
+
+/* Footer and Social Icons */
+.social .content {
+	text-align: center;
+	margin-top: 5rem;
+	color: #fff;
+	border-top: 1px solid #fff;
+}
+.social li {
+	display: inline-block;
+	text-align: center;
+	margin: 0 auto;
+}
+.social hr {
+	border: 0;
+	border-style: 2rem solid #fff;
+	margin: 1rem 0;
+}
+.social .icons > li {
+	border: transparent;
+    border-radius: 50rem;
+    width: 2.5rem;
+    height: 1rem;
+    display: inline-block;
+    margin: 1.25rem 5px;
+    border: 1px solid #fff;
+    padding: 0.625rem 0;
+    text-align: center;
+}
+.social .twitter {
+    color: #55acee;
+}
+.social .facebook {
+    color: #4c66a4;
+}
+.social .instagram {
+   color: ;
+}
