@@ -16,7 +16,6 @@ time, mark, audio, video {
 	border: 0;
 	outline: 0;
 	font-size: 100%;
-	font: inherit;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -26,9 +25,10 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-	font-family: Arial, sans-serif;
-	background-color: #000000;
 	width: 100%;
+}
+p, h1, h2, h3, h4, input, button, fieldset {
+	text-align: center;
 }
 ol, ul {
 	list-style: none;
@@ -62,9 +62,10 @@ table {
 /* Navigation Section */
 .top-nav {
 	background-color: #fff;
-	color: #000;
+	color: #;
 }
-.nav-wrappe
+.nav-wrapper {
+	text-align: center;
 }
 .top-nav ul {
 	list-style-type: none;
@@ -86,7 +87,7 @@ table {
 	padding: 15px;
 }
 .top-nav ul li a:hover {
-	color: #ccc;
+	color: #ffff00;
 	text-decoration: none;	
 }
 .top-nav ul li:hover ul {
@@ -96,8 +97,6 @@ table {
 	visibility: hidden;
 	position: absolute;
 	background-color: #333;
-	border-top: 0;
-
 }
 .top-nav ul ul li{
 	display: block;
@@ -105,11 +104,11 @@ table {
 	text-align: left;
 }
 .top-nav ul ul li a:hover {
-	color: #669;
+	color: #ffff00;
 }
 
 /* Introduction Section */
-.intro {
+.intro .intro-heading {
 	background-image: url('img/rock-person.jpg');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -117,68 +116,42 @@ table {
 	background-size: 100%;
 	height: 40rem;
 	padding: 0 auto;
-
+	margin-top: -10px;
 	color: #fff;
 }
-/* Inpsiration Updates */
-.tabs {
-	text-align: center;
-	padding: 0;
-	margin: 0;
-	color: white;
-	font-family: "josefin Slab", serif;
-	font-weight: 100 thin;
-	font-size: 17px;
+.intro .inspire {
+	border: none;
+	height: 15px;
+	font-size: 10px;
+	border-radius: 20px
 }
-.tabs .road {
-	background-image: url("img/sunrise-road.jpg");
-	background-position: 100%;
-	background-size: cover;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	height: 500px;
+.intro .inspire:hover {
+	background-color: #000;
 }
 
-.tabs .edge {
-	background-image: url("img/person-ledge.jpg");
-	background-position: cover;
-	background-size: 100%;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	height:500px;
-}
-.tabs .madders {
-	background-image: url("img/m&m.jpg");
-	background-position: cover;
-	background-size: 100%;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	height: 300px;
-}
-.tabs a {
-	color: #eee;
-}
 br {
-	color: white;
+	color: #c8cccc;
 }
 
 /* Contact and Review */
 
-.contact .content {
+.contact legend  { 
 	color: #fff;
-	text-align: center;
+}
+.contact fieldset {
 	border: none;
 }
-
 .contact input {
 		margin: .5rem 0;
+		border: none;
+		background-color: transparent;
 }
 
 /* Footer and Social Icons */
 .social .content {
 	text-align: center;
 	margin-top: 5rem;
-	color: #fff;
+	background-color: #000;
 	border-top: 1px solid #fff;
 }
 .social li {
@@ -209,7 +182,7 @@ br {
     color: #4c66a4;
 }
 .social .instagram {
-   color: ;
+   color: #fff;
 }
 .social li a:visited {
 	color: #ffff00;
