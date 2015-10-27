@@ -1,24 +1,70 @@
-/* CSS RESET AND STUFF */
-html,body
-{
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
-    background: #000;
+/* CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	font-family: Arial, sans-serif;
+	background-color: #000000;
+	width: 100%;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
 }
 
+/* remember to define visible focus styles! 
+:focus {
+	outline: ?????;
+} */
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 /* Navigation Section */
 .top-nav {
 	background-color: #fff;
-	opacity: 0.4;
 	color: #000;
 }
-.nav-wrapper {
-	width: 100%;
-	margin: 0 auto;
-	text-align: right;
+.nav-wrappe
 }
 .top-nav ul {
 	list-style-type: none;
@@ -64,55 +110,25 @@ html,body
 
 /* Introduction Section */
 .intro {
-	text-align: center;
 	background-image: url('img/rock-person.jpg');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: cover;	
 	background-size: 100%;
-	height: 50rem;
+	height: 40rem;
 	padding: 0 auto;
-	margin: -6.5rem auto;
+
 	color: #fff;
 }
-.intro h2 {
-	padding-top: 5rem;
-	font-family: 'Josefin Slab', serif;
-	text-transform: uppercase;
-	font-size: 4rem;
-	margin-right: 15rem;
-}
-
-.intro h1 {
-	padding-top: -1rem;
-	font-family: 'Josefin Slab', serif;
-	font-weight: 700;
-	font-size: 7rem;
-}
-.intro .inspire {
-	border: 3px solid white;
-	border-radius: 25px;
-	box-shadow: transparent white;
-	height: 5rem;
-	width: 15rem;
-	font-size: 1rem;
-background: transparent;
-color: white;
-}
-
 /* Inpsiration Updates */
 .tabs {
 	text-align: center;
 	padding: 0;
+	margin: 0;
 	color: white;
 	font-family: "josefin Slab", serif;
 	font-weight: 100 thin;
 	font-size: 17px;
-	margin: 15rem auto;
-}
-.tabs .content h1, h2, p {
-	max-width: 37.5rem;
-	margin-left: 25rem;
 }
 .tabs .road {
 	background-image: url("img/sunrise-road.jpg");
@@ -120,31 +136,24 @@ color: white;
 	background-size: cover;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-	margin-top: 15rem;
-	height: 40rem;
+	height: 500px;
 }
 
 .tabs .edge {
 	background-image: url("img/person-ledge.jpg");
-	background-position: 100%;
-	background-size: cover;
+	background-position: cover;
+	background-size: 100%;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-	margin-top: 15rem;
-	height: 40rem;
+	height:500px;
 }
 .tabs .madders {
 	background-image: url("img/m&m.jpg");
-	background-position: 100%;
-	background-size: cover;
+	background-position: cover;
+	background-size: 100%;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-	margin-top: 15rem;
-	height: 40rem;
-}
-img {
-	margin-top: -5rem;
-	border-radius: 20px;
+	height: 300px;
 }
 .tabs a {
 	color: #eee;
@@ -157,9 +166,8 @@ br {
 
 .contact .content {
 	color: #fff;
-	max-width: 37.5rem;
 	text-align: center;
-	margin-left: 30rem;
+	border: none;
 }
 
 .contact input {
@@ -202,4 +210,7 @@ br {
 }
 .social .instagram {
    color: ;
+}
+.social li a:visited {
+	color: #ffff00;
 }

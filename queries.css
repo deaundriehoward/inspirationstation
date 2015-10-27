@@ -1,0 +1,47 @@
+@media only screen and (max-width: 321px) {
+	body {
+		width: 100%;
+		height: 100%;
+		padding: 0;
+		margin: 0;
+	}
+
+	p, h1, h2 {
+		font-size: 100%;
+		text-align: center;
+	}
+	.nav-wrapper {
+		text-align: center;
+		font-size: 50%;
+	}
+	.top-nav ul li a, li:visited {
+	color: #aaa;
+	display: block;
+	text-decoration: none;
+	padding: 5px;
+}
+
+	.intro h2 {
+		padding-top: 125px;
+		margin: 0 auto;
+		font-size: 100%;
+		text-align: center;
+	}
+	.intro p {
+		text-align: center;
+		font-size: 100%;
+		font-weight: 100 thin;
+		padding: 0;
+		margin: 0;
+	}
+	.tabs .tabs-heading {
+		margin: -500px auto;
+		padding: 0;
+	}
+	.tabs .road, .tabs .edge, .tabs .madders {
+		width: 100%;
+		background-size: 100%;
+		margin-top: 1%;
+		height: 1%;
+	}
+}
