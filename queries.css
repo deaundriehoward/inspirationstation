@@ -1,5 +1,15 @@
-@media only screen and (max-width: 320px) {
-	.intro {
-		padding: 0;
+@media only screen and (min-width: 320px) {
+	body {
+		margin: 0px;
+		padding: 0px;
+		width: 100%;
+		height: 100%;
+		overflow-x: hidden;
+	}
+	.nav-wrapper{
+		padding: 0px;
+	}
+	.intro .intro-heading {
+		height: 50%;
 	}
 	}
