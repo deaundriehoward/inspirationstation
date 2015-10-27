@@ -16,10 +16,12 @@
 		margin-top: 5px;
 }
 	.intro h2 {
+	font-family: 'Josefin Slab', serif;
 	text-align: left;
 	margin-left: 25px;
 }
 	.intro p {
+	font-family: 'Josefin Slab', serif;
 	text-align: right;
 	padding-right: 35px;
 	padding-top: 10px;
