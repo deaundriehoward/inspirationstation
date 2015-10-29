@@ -1,148 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<link href='https://fonts.googleapis.com/css?family=Josefin+Slab:100italic,700,400' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="main.css">
-		<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-		<link rel="stylesheet" href="normalize.css">
-		<link rel="stylesheet" type="text/css" href="queries.css">
-		<meta name="viewport" content="widt=device-width, initial-scale=1">
-		<link href="font-awesome-4.4.0/css/font-awesome.min.css" rel="stylesheet">
-		<script src="jquery-2.1.4.js"></script>
-		<script src="main.js"></script>
-		<title> Hope for a better tomorrow | Inspiration Station</title>
-	</head>
-	<body>
-		<header class="top-nav">
-				<div class="nav-wrapper">
-				<ul>
-					<li><a href="#"> Home </a></li><li>
-					<a href="#"> Inspire Here</a></li><li>
-					<a href="#"> Projects </a>
-						<ul>
-							<li><a href="#"> Around the community </a></li><li>
-							<a href="#"> Around the World </a></li><li>
-							<a href="#"> How you can help </a></li>
-						</ul>
-					</li><li>
-					<a href="#"> About </a></li><li>
-					<a href="#"> Contact Us </a></li>
-				</ul> 
-				</div>
-		</header>
-		<section class="intro">
-			<div class="intro-heading">
-				<h2><em>A better world...</em></h2>
-				<p>...starts with YOU </p>
-				<button class="inspire" name=""> Start Here </button>
-			</div>
-		</section>
-		<section>
-			<div class="inspiration">
-				<h1> Daily Inspiration</h1>
-				<div>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				</div>
-			<div class="blog">
-				<h1> Life in the Fast Lane </h1>
-					<p> Life can always seem to go very fast, but did you know you're not going as fast as you think you are. </p>
-					<button class="read-more"> Continue Reading </button>
-			</div>
-			</div>
-		</section>
-				<blockquote>
-					<em> Be the change you want to see in the world</em>
-				</blockquote>
-		</section>
-		<hr />
-		<section class="contact">
-			<div class="forms">
-				<form action="#">
-					<fieldset>
-						<legend>
-							Your Information:
-						</legend>
-							<label>
-								Name:
-								<input type="text" name="name" size="30" maxlength="100" placeholder="Enter your name">
-							</label>
-							<br />
-							<label>
-								Email:
-								<input type="text" name="name" size="30" maxlength="100" placeholder="Enter your email address">
-							</label>
-					</fieldset>
-					<br />
-					<fieldset>
-						<legend>
-							Your Review:
-						</legend>
-						<p>
-							<label for="hear-about">
-								How did you hear about us?
-							</label>
-							<select name="referrer" class="hear-about">
-								<option value="google"> El Google</option>
-								<option value="friend"> Thy Friend</option>
-								<option value="advert"> Advert? What the heck is that?</option>
-								<option value="other"> Other</option><input type="text" name='other' size='45' maxlength="140" placeholder=" If other, please identify.">
-							</select>
-						</p>
-						<p>
-							<label for="comments">
-								Comments:
-							</label>
-							<br />
-							<textarea rows="4" cols="40" class="comments"></textarea>
-						</p>
-						<label>
-							<input type="checkbox" name="subscribe" checked="checked" />
-							Sign me up for email updates!
-						</label>
-						<br />
-						<inpu type="submit" value="Submit review" />
-					</fieldset>
-				</form>
-			</div>
-		</section>
-		<footer class="social">
-			<div class="content">
-				<h3> Inspire with Me On: </h3>
-					<ul class="icons">
-						<li class="google +"> <a href="https://plus.google.com/u/0/">
-							<i class="fa fa-google-plus"></i> 
-							</a>
-						</li>
-						<li class="facebook"> <a href="https://facebook.com/deaundriehoward/">
-							<i class="fa fa-facebook-f"></i>
-							</a>
-						</li>
-						<li class="codepen"> <a href="https://codpen.io/deaundrie90/">
-							<i class="fa fa-codepen"></i>
-							</a>
-						</li>
-						<li class="github"> <a href="https://github.com/DeAundrie90">
-							<i class="fa fa-github"></i>
-							</a>
-						</li>
-						<li class="instagram"> <a href="https://instagram.com/just_deaundrie/">
-							<i class="fa fa-instagram"></i>
-							</a>
-						</li>
-						<li class="pinterest"> <a href="https://www.pinterest.com/deaundrie/">
-							<i class="fa fa-pinterest"></i>
-							</a>
-						</li>
-					</ul>
-					<p class="copyright">
-					&copy De'Aundrie Howard, Inc. </p>
-			</div>		
-		</footer>
-	</body>
+<html>
+    <head>
+        <title> Hope for a better tommorow | Inspiration Station </title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="grid.css">
+        <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+        <link rel="stylesheet" href="main.css">
+        <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,300italic' rel='stylesheet' type='text/css'>
+        <script src="jquery-2.1.4.js"></script>
+    </head>
+    
+    <body>
+         <header>
+            <nav class="row">
+                <div class="nav-wrapper">
+                    <ul class="main-nav">
+                        <li> <a href="#"> Home </a></li>
+                        <li> <a href="#"> Inpsire Within </a></li>
+                        <li> <a href="#"> Projects </a>
+                        </li>
+                        <li> <a href="#"> About </a></li>
+                        <li> <a href="#"> Contact Us </a></li>
+                        <li> <a href="#"> Donations </a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="hero-text-box">
+                <h1> A Better World... <br>
+                    ...starts with <em class="you">You </em> </h1>
+                <a class="btn btn-full" href="#"> Start Here </a>
+                <a class="btn btn-full" href="#"> Learn More </a>
+            </div>
+        </header>
+        
+        <section class="features">
+            <div class="row">
+                <div class="daily-inspiration">
+                    <h2> Get Inpsire &mdash; Today!</h2>
+                    <p class="long-copy"> Hello there! Our goal here at Inspiration Station is to inpsire and give hope throuhg Jesus Christ, the light, the truth, and the way. When the trials and tribulations of life seem to rain down us, we do our best to <em> bring the sun out</em> and lighten up your day. Feel free to stick around and be inspired. Also, feel free to comment and inspiration someone</p>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3 box">
+                        <a href="#">
+                        <i class="ion-ios-partlysunny"></i>
+                        <h3> Daily Inspiration </h3>
+                        <p> Here is where "Daily Inspiration" would be. It would be a daily quote or picture provide insight, wisdom, or inspiration. </p>
+                        </a>
+                    </div>
+                    <div class="col span-1-of-3 box">
+                        <a href="#">
+                        <i class="ion-ios-people"></i>
+                        <h3> Share Your <em> LIGHT </em> </h3>
+                        <p> We don't limit your creativity, which means you can say whatever you feel like. Share your testimony, story, or something encouraging. It just may <em>light</em> up someone' day or even their lives! </p>
+                        </a>
+                    </div>
+                    <div class="col span-1-of-3 box">
+                        <a href="#">
+                        <i class="ion-compose"></i>
+                        <h3> Weekly Writing </h3>
+                        <p> Need a little more <em>light</em>? Feel free to check out weekly blog where we share tons of stories, testimonies, and inspiration. For the amount inspiration was too much to contain on just this one page! </p>
+                        </a>
+                    </div>
+        </section>
+                
+       <section class="section-life">
+            <ul class="life-showcase clearfix">
+                <li>
+                    <figure class="life-photo">
+                        <img src="img/contemplate.jpeg" alt="Contemplating Life">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="life-photo">
+                        <img src="img/lake.jpeg" alt="Lakes of Life">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="life-photo">
+                        <img src="img/lost.jpeg" alt="Lost">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="life-photo">
+                        <img src="img/lovesun.jpg" alt="Becoming One">
+                    </figure>
+                </li>
+            </ul>
+           <ul class="life-showcase clearfix">
+                <li>
+                    <figure class="life-photo">
+                        <img src="img/sunset.jpeg" alt="Dawn before Dusk">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="life-photo">
+                        <img src="img/serenity.jpeg" alt="Peace & Serenity">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="life-photo">
+                        <img src="img/wilderness.jpeg" alt="Into the Unknown">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="life-photo">
+                        <img src="img/setting.jpeg" alt="Holy Spirit">
+                    </figure>
+                </li>
+            </ul>
+        </section>
+    </body>
 </html>

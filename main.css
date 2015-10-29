@@ -1,214 +1,261 @@
-/* CSS Reset */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	outline: 0;
-	font-size: 100%;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	font-family: 'Josefin Slab', sans-serif;
-	line-height: 135%;
-	width: 100%;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+/*--------------- Basic Setup -----------*/
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
 
-/* remember to define visible focus styles! 
-:focus {
-	outline: ?????;
-} */
-
-/* remember to highlight inserts somehow! */
-ins {
-	text-decoration: none;
-}
-del {
-	text-decoration: line-through;
+html {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
 }
 
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-/* Navigation Section */
-.top-nav {
-	background-color: #fff;
-	}
-.nav-wrapper {
-	text-align: right;
-}
-.top-nav ul {
-	list-style-type: none;
-	padding: 0;
-	margin: 0;
-	position: relative;
-	min-width: 200px;
-}
-.top-nav ul li {
-	display: inline-block;
-}
-.top-nav ul li:hover {
-	background-color: #333;
-}
-.top-nav ul li a, li:visited {
-	color: #aaa;
-	display: block;
-	text-decoration: none;
-	padding: 15px;
-}
-.top-nav ul li a:hover {
-	color: #ffff00;
-	text-decoration: none;	
-}
-.top-nav ul li:hover ul {
-	visibility: visible;
-}
-.top-nav ul ul {
-	visibility: hidden;
-	position: absolute;
-	background-color: #333;
-}
-.top-nav ul ul li{
-	display: block;
-	background-color: #333;
-	text-align: left;
-}
-.top-nav ul ul li a:hover {
-	color: #ffff00;
+a {
+    text-decoration: none;
+    color: #555;
 }
 
-/* Introduction Section */
-.intro {
-	background-image: url('img/rock-person.jpg');
-	background-repeat: no-repeat;
-	background-attachment: fixed; 	
-	background-size: 100%;
-	height: 50rem;
-	padding: 0 auto;
-	color: #fff;
+a:hover {
+    cursor: pointer;
+    color: #000;
+    transition: color 0.5s;
 }
-.intro h2 {
-	font-family: 'Josefin Slab', serif;
-	text-align: left;
-	margin-left: 150px;
-	padding-top: 150px;
-	font-size: 75px;
-}
-.intro p {
-	float: right;
-	font-family: 'Josefin Slab', serif;
-	margin-right:100px;
-	margin-top: 170px;
-	font-size: 75px;
-}
-.intro button {
-	float: right;
-	background-color: transparent;
-	border: 1px solid #ffffff;
-	height: 65px;
-	width: 20%;
-	font-size: 25px;
-	border-radius: 10px;
-	margin-top: 65px;
-	margin-right: -70px;
-}
-.intro .inspire:hover {
-	background-color: #ffff00;
-	color: #000000;
+.clearfix {zoom: 1}
+.clearfix:after {
+    content: ".";
+        clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
 }
 
-br {
-	color: #c8cccc;
+/*--------------- Reusable Components -----------*/
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
 }
 
-/* Daily Inspiration */
-.inspiration {
-	clear: both;
-	width: 100%;
-	height: 100%;
-	margin: 0;
-	padding: 0;
-	background-color: #ffff00;
-	height: 50rem;
+section {
+    padding: 80px 0;
+    
 }
-.inspiration h1 {
-	border-bottom: 1px solid black;
-	width: 
-}
-.inspiration h1, .inspiration p {
-	font-family: 'Josefin Slab', serif;
-	max-width: 37.5rem;
-	text-align: center;
-	margin: 0 auto;
-	padding: 0 auto;
-	letter-spacing: 150%;
-}
-/* Contact and Review */
 
-/* Footer and Social Icons */
-.social .content {
-	text-align: center;
-	margin-top: 5rem;
-	background-color: #000;
-	border-top: 1px solid #fff;
+.box {
+    padding: 1%;
 }
-.social li {
-	display: inline-block;
-	text-align: center;
-	margin: 0 auto;
+
+/* ---HEADINGS--- */
+h1, h2, h3 {
+    font-weight: 300;
+    text-transform: uppercase;
 }
-.social hr {
-	border: 0;
-	border-style: 2rem solid #fff;
-	margin: 1rem 0;
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 250%;
+    color: #efefef;
+    word-spacing: 4px;
+    letter-spacing: 1px;
 }
-.social .icons > li {
-	border: transparent;
-    border-radius: 50rem;
-    width: 2.5rem;
-    height: 1rem;
-    display: inline-block;
-    margin: 1.25rem 5px;
-    border: 1px solid #fff;
-    padding: 0.625rem 0;
+
+
+h2 {
+    font-size; 180%;
+    word-spacing: 2px;
     text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
 }
-.social .twitter {
-    color: #55acee;
+
+h3 {
+margin-bottom: 15px;
 }
-.social .facebook {
-    color: #4c66a4;
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #f3cc2f;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
 }
-.social .instagram {
-   color: #fff;
+
+/*-------------- HEADER ----------------*/
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url('img/rock-person.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
 }
-.social li a:visited {
-	color: #ffff00;
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo {
+    height: 100px;
+    width: auto:
+    float: left;
+    margin: 20px;
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+}
+
+.main-nav li {
+    display: inline;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s; 
+    padding: 7px 0;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #F1C40F;
+}
+
+.you {
+    color: #f3cc2f;
+}
+
+/* ---BUTTONS--- */
+
+.btn {
+    margin: 50px;
+}
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 500px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+  background-color: #f3cc2f;
+     border: 1px solid #f3cc2f;
+    color: #fff;
+    margin-right: 15px;
+    padding-riglt: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited{
+   border: 1px solid #f3cc2f;
+    color:  #d2aa0c;
+ 
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #d2aa0c;
+}
+
+.btn-full:hover,
+.btn-full:active {
+     border: 1px solid #d2aa0c;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active{
+   border: 1px solid #d2aa0c;
+    color:  #fff;
+} 
+
+
+
+/* ---FEATURE PARAGRAPH--- */
+.long-copy {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%
+}
+
+.box p {
+    font-size: 90%;
+    line-height: 145%;
+}
+
+
+
+/* --- Life ---*/
+.section-life {
+    padding: 0;
+}
+.life-showcase {
+    list-style: none;
+    width: 100%;
+}
+
+.life-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.life-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.life-photo img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+    
+}
+.life-photo img:hover {
+    transform: scale(1.01);
+    opacity: 1;
+}
+
+
+/* ----Miscellaneous ----*/
+em {
+    color: #F1C40F;
+}
+
+i {
+    font-size: 50px;
+    margin: 0;
+    padding: 0 100px;
+    float: center;
+    
 }
